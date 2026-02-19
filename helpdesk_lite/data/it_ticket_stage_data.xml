@@ -1,0 +1,17 @@
+<odoo>
+    <data>
+        <record id="stage_new" model="it.ticket.stage">
+            <field name="name">Nuevo</field>
+            <field name="sequence">1</field>
+        </record>
+        <record id="stage_progress" model="it.ticket.stage">
+            <field name="name">En Proceso</field>
+            <field name="sequence">10</field>
+        </record>
+        <record id="stage_done" model="it.ticket.stage">
+            <field name="name">Cerrado</field>
+            <field name="sequence">100</field>
+            <field name="is_closed">True</field>
+        </record>
+    </data>
+</odoo>

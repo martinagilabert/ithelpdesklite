@@ -1,0 +1,17 @@
+<odoo>
+    <menuitem id="menu_it_helpdesk_root"
+              name="IT Helpdesk"
+              sequence="10"/>
+
+    <menuitem id="menu_it_ticket"
+              name="Incidencias"
+              parent="menu_it_helpdesk_root"
+              action="action_it_ticket"
+              sequence="10"/>
+
+    <menuitem id="menu_configuration"
+              name="Configuración"
+              parent="menu_it_helpdesk_root"
+              sequence="20"/>
+
+    </odoo>

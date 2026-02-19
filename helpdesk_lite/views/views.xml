@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="helpdesk_lite.list">
+      <field name="name">helpdesk_lite list</field>
+      <field name="model">helpdesk_lite.helpdesk_lite</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </list>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="helpdesk_lite.action_window">
+      <field name="name">helpdesk_lite window</field>
+      <field name="res_model">helpdesk_lite.helpdesk_lite</field>
+      <field name="view_mode">list,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="helpdesk_lite.action_server">
+      <field name="name">helpdesk_lite server</field>
+      <field name="model_id" ref="model_helpdesk_lite_helpdesk_lite"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "list,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="helpdesk_lite" id="helpdesk_lite.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="helpdesk_lite.menu_1" parent="helpdesk_lite.menu_root"/>
+    <menuitem name="Menu 2" id="helpdesk_lite.menu_2" parent="helpdesk_lite.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="helpdesk_lite.menu_1_list" parent="helpdesk_lite.menu_1"
+              action="helpdesk_lite.action_window"/>
+    <menuitem name="Server to list" id="helpdesk_lite" parent="helpdesk_lite.menu_2"
+              action="helpdesk_lite.action_server"/>
+-->
+  </data>
+</odoo>

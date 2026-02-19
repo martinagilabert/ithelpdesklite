@@ -1,0 +1,15 @@
+<odoo>
+    <record id="module_category_helpdesk" model="ir.module.category">
+        <field name="name">IT Helpdesk</field>
+        <field name="description">Categoría de seguridad para Helpdesk</field>
+    </record>
+
+    <record id="group_helpdesk_user" model="res.groups">
+        <field name="name">Usuario Helpdesk</field>
+    </record>
+
+    <record id="group_helpdesk_manager" model="res.groups">
+        <field name="name">Manager Helpdesk</field>
+        <field name="implied_ids" eval="[(4, ref('group_helpdesk_user'))]"/>
+    </record>
+</odoo>
